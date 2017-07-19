@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDF2EXCEL", "PDF2EXCEL\PDF2EXCEL.csproj", "{3D439896-46BB-481C-9C91-0CFA851647CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matchPDF", "testApp\matchPDF.csproj", "{64B2A9FC-48BC-486F-B744-5903DAD67F14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D439896-46BB-481C-9C91-0CFA851647CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D439896-46BB-481C-9C91-0CFA851647CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D439896-46BB-481C-9C91-0CFA851647CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D439896-46BB-481C-9C91-0CFA851647CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B2A9FC-48BC-486F-B744-5903DAD67F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B2A9FC-48BC-486F-B744-5903DAD67F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B2A9FC-48BC-486F-B744-5903DAD67F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B2A9FC-48BC-486F-B744-5903DAD67F14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="MatchPDFreport.DBsettingUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignWidth="350" Height="200">
+    <Grid Margin="0,0,0,0">
+        <RadioButton x:Name="RBmdb" Content="Access数据库" HorizontalAlignment="Left" Margin="21,19,0,0" VerticalAlignment="Top" IsChecked="True" Click="GDmdb_Checked"/>
+        <RadioButton x:Name="RBmssql" Content="MS-SQL数据库" HorizontalAlignment="Left" Margin="137,19,0,0" VerticalAlignment="Top" Click="RBmssql_Checked"/>
+        <Grid x:Name="GDaccess" Visibility="Visible" HorizontalAlignment="Left" Height="120" Margin="10,40,0,30" VerticalAlignment="Top" Width="330">
+            <Label Content="数据库路径:" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBaccesspath" HorizontalAlignment="Left" Height="23" Margin="80,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TabIndex="1"/>
+            <Button x:Name="btnBrowse" Content="浏览" HorizontalAlignment="Left" Margin="190,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.6,-0.364" Click="btnBrowse_Click"/>
+            <Label Content="数据库密码:" HorizontalAlignment="Left" Margin="8,40,0,0" VerticalAlignment="Top" Width="73"/>
+            <TextBox x:Name="TBaccessPW" HorizontalAlignment="Left" Height="23" Margin="80,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TabIndex="2"/>
+        </Grid>
+        <Grid x:Name="GDmssql" Visibility="Hidden" HorizontalAlignment="Left" Height="120" Margin="10,40,0,30" VerticalAlignment="Top" Width="330">
+            <Label Content="数据库地址:" HorizontalAlignment="Left" Margin="8,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBmssqlIP" HorizontalAlignment="Left" Height="23" Margin="80,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TabIndex="1"/>
+            <Label Content="数据库端口:" HorizontalAlignment="Left" Margin="8,40,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBmssqlPort" HorizontalAlignment="Left" Height="23" Margin="80,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TabIndex="2"/>
+            <Label Content="数据库名称:" HorizontalAlignment="Left" Margin="8,70,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBmssqlName" HorizontalAlignment="Left" Height="23" Margin="80,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TabIndex="3"/>
+            <Label Content="用户名:" HorizontalAlignment="Left" Margin="180,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBmssqlUN" HorizontalAlignment="Left" Height="23" Margin="230,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TabIndex="4"/>
+            <Label Content="密  码:" HorizontalAlignment="Left" Margin="180,40,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="TBmssqlPW" HorizontalAlignment="Left" Height="23" Margin="230,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TabIndex="5"/>
+        </Grid>
+        <Button x:Name="btnConfirm1" Content="确定" HorizontalAlignment="Left" Margin="130,170,0,0" VerticalAlignment="Top" Width="75" Click="btnConfirm_Click"/>
+        <Button x:Name="btnCancel1" Content="取消" HorizontalAlignment="Left" Margin="220,170,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+
+        <!--<Frame Content="Frame" HorizontalAlignment="Left" Height="55" Margin="21,71,0,0" VerticalAlignment="Top" Width="90">
+
+
+        </Frame>-->
+
+    </Grid>
+</UserControl>

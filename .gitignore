@@ -1,0 +1,11 @@
+
+*.suo
+*.dll
+*.pdb
+*.Cache
+*.txt
+*.htm
+testApp/
+bin/
+obj/
+../PDF2EXCEL/
